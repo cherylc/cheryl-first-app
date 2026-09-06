@@ -62,3 +62,38 @@ body {
     filter: blur(0px);
   }
 }
+
+#pop-button {
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 11px 32px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #4a148c;
+  background: white;
+  border: 2.5px solid #1a1a1a;
+  border-radius: 9999px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pop-button:hover {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+#pop-button.active,
+#pop-button:active {
+  transform: translateX(-50%) scale(0.94);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
