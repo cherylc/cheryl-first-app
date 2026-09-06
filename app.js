@@ -34,12 +34,12 @@ function stopPopping() {
     clearInterval(popInterval);
     popInterval = null;
   }
-  button.textContent = 'pop';
+  button.textContent = 'pop!';
   button.classList.remove('active');
 }
 
 function press() {
-  button.textContent = 'POP';
+  button.textContent = 'POP!';
   button.classList.add('active');
   startPopping();
 }
